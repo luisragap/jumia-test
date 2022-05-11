@@ -1,0 +1,29 @@
+.user-card
+    border-radius: 10px
+    border-left: #673ab7 solid 2px
+    border-bottom: #673ab7 solid 2px
+    width: 400px
+    height: 220px
+    margin: 10px 0px 25px
+    &__content
+        margin-top: 15px
+        div
+            margin-top: 10px
+    &__image
+        border-radius: 5px
+@media screen and (max-width: 575px)
+    .user-card
+        width: 300px
+        height: 255px
+        &__content
+            margin-top: 10px
+            div
+                margin-top: 5px
+@media screen and (max-width: 320px)
+    .user-card
+        width: 250px
+        height: 300px
+        &__content
+            margin-top: 10px
+            div
+                margin-top: 5px

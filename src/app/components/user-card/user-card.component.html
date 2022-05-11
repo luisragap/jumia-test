@@ -1,0 +1,14 @@
+<mat-card class="user-card">
+    <mat-card-title-group>
+        <mat-card-title>{{user.name.first}} {{user.name.last}}</mat-card-title>
+        <mat-card-subtitle>{{user.gender | titlecase}}</mat-card-subtitle>
+        <mat-card-subtitle>Age: {{user.dob.age}}</mat-card-subtitle>
+        <mat-card-subtitle>Since: {{user.registered.date | date}}</mat-card-subtitle>
+        <img mat-card-md-image class="user-card__image" [src]="user.picture.medium">
+    </mat-card-title-group>
+    <mat-card-content class="user-card__content">
+        <div><b>Location: </b>{{user.location.country}}, {{user.location.city}}, {{user.location.state}}</div>
+        <div><b>Phone: </b>{{user.cell}}</div>
+        <div><b>Email: </b>{{user.email}}</div>
+    </mat-card-content>
+</mat-card>
