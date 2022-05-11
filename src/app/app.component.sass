@@ -1,0 +1,52 @@
+.header
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    height: 60px
+    display: flex
+    align-items: center
+    background-color: #673ab7
+    color: white
+    font-weight: 600
+
+    & img
+        margin: 0 16px
+        width: 65px
+        height: 60px
+        color: white
+        filter: invert(1)
+
+.title
+    font: 500 20px/32px Roboto, "Helvetica Neue", sans-serif
+    letter-spacing: normal
+    margin-left: 20px
+.loading-spinner
+    display: flex
+    justify-content: center
+.options
+    margin: 82px 5% 25px
+    display: flex
+    justify-content: center
+    .btn
+        margin: 0px 10px
+        height: 50px
+        min-width: 130px
+    .anchor-btn
+        text-decoration: none
+        color: white
+
+.content
+    display: flex
+    margin: 0px 5% 32px
+    flex-wrap: wrap
+    justify-content: space-around
+
+@media screen and (max-width: 575px)
+    .content
+        flex-direction: column
+        align-items: center
+
+@media screen and (max-width: 900px)
+    .options
+        flex-wrap: wrap
