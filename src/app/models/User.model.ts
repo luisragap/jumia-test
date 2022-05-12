@@ -1,7 +1,7 @@
 import { Nationality } from '../utils/Nationality.enum';
 
 export class User {
-  gender: 'male' | 'female';
+  gender: string;
   name: {
     title: string;
     first: string;
